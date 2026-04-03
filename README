@@ -1,0 +1,19 @@
+# Automated Credit Risk Classification Tool
+
+## Project Overview
+This Python-based utility automates the classification of consumer credit risk by evaluating Credit Scores and Debt-to-Income (DTI) ratios. It mimics real-world compliance monitoring workflows for Lending Laws (Reg Z / UDAAP).
+
+## Key Features
+* **Automated Logic:** Replaces manual Excel/SQL CASE statements with a scalable Python function.
+* **Vectorized Data Handling:** Utilizes the `Pandas` library for high-performance data manipulation.
+* **Audit-Ready Output:** Generates a structured DataFrame ready for executive reporting or regulatory review.
+
+## Technical Stack
+* **Language:** Python 3.12+
+* **Libraries:** Pandas
+* **Environment:** VS Code / Jupyter
+
+## How It Works
+The script evaluates a dataset of applicants and applies a risk threshold:
+* **Low Risk:** Credit Score > 700 AND DTI < 40%
+* **High Risk:** Any applicant failing either criteria.
